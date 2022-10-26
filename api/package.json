@@ -1,0 +1,10 @@
+{
+	"private": true,
+  "name": "millennium-recruitment-task-api",
+	"scripts": {
+		"server": "json-server db.json"
+	},
+	"dependencies": {
+		"json-server": "^0.17.0"
+	}
+}

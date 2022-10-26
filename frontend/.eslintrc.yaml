@@ -1,0 +1,74 @@
+---
+root: true
+
+ignorePatterns:
+  - '*.d.ts'
+
+env:
+  browser: true
+
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:import/typescript
+  - plugin:prettier/recommended
+  - prettier/@typescript-eslint
+  - prettier/react
+
+parser: '@typescript-eslint/parser'
+
+parserOptions:
+  project: tsconfig.json
+  sourceType: module
+
+settings:
+  react:
+    version: detect
+
+plugins:
+  - import
+  - '@typescript-eslint'
+  - unused-imports
+  - eslint-plugin-react
+  - prettier
+
+rules:
+  '@typescript-eslint/explicit-member-accessibility':
+    - error
+    - accessibility: explicit
+      overrides:
+        constructors: off
+  '@typescript-eslint/no-empty-interface': error
+  '@typescript-eslint/explicit-module-boundary-types':
+    - off
+  '@typescript-eslint/no-empty-function': error
+  '@typescript-eslint/unified-signatures': error
+  '@typescript-eslint/semi':
+    - error
+    - always
+  arrow-parens:
+    - off
+    - always
+  no-empty: error
+  comma-dangle: off
+  react/jsx-boolean-value:
+    - error
+    - always
+  react/jsx-key: error
+  react/jsx-equals-spacing: off
+  react/jsx-curly-spacing: off
+  react/jsx-wrap-multilines: off
+  react/jsx-no-bind: off
+
+  '@typescript-eslint/ban-types': off
+  '@typescript-eslint/unbound-method': off
+  '@typescript-eslint/no-unnecessary-type-assertion': off
+  '@typescript-eslint/no-unsafe-call': off
+  '@typescript-eslint/naming-convention': off
+  '@typescript-eslint/no-use-before-define': off
+  '@typescript-eslint/no-unsafe-return': off
+  '@typescript-eslint/quotes': off
+  '@typescript-eslint/no-floating-promises': off
