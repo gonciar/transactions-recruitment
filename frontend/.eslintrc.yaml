@@ -15,6 +15,7 @@ extends:
   - plugin:import/warnings
   - plugin:import/typescript
   - plugin:prettier/recommended
+  - plugin:react-hooks/recommended
   - prettier/@typescript-eslint
   - prettier/react
 
