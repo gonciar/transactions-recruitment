@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.button:hover, .button.selected {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,17 @@
+.balanceContainer {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.text {
+  font-size: 20px;
+}
+.amount {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .balanceContainer {
+    margin-bottom: 10px;
+  }
+}

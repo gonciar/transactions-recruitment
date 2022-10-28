@@ -1,0 +1,17 @@
+.wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+}
+
+.input {
+  margin-top: 1px;
+  border-width: 4px;
+  padding: 8px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: bold;
+}

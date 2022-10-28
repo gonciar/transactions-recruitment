@@ -1,0 +1,36 @@
+.transactionsHeaderWrapper {
+  display: flex;
+  width: calc(100% - 100px);
+  padding: 30px 50px;
+  flex-flow: row;
+}
+
+.transactionHeaderBalanceFilter {
+  min-width: 300px;
+  display: flex;
+  flex-flow: column;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .transactionsHeaderWrapper {
+    padding: 15px 20px;
+    width: calc(100% - 40px);
+    flex-flow: row;
+  }
+
+  .transactionHeaderBalanceFilter {
+    min-width: 0;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .transactionsHeaderWrapper>div:nth-child(1) {
+    order: 2;
+  }
+
+  .transactionsHeaderWrapper>div:nth-child(2) {
+    order: 1;
+  }
+}
